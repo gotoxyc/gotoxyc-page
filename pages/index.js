@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { useState } from "react";
-import Image from "next/image";
 import { FiChevronDown, FiPhone, FiMail, FiShare2 } from "react-icons/fi";
 import styles from "../styles/Home.module.css";
 import { FaInstagram } from "react-icons/fa";
@@ -19,10 +18,10 @@ import {
   Flex,
   Heading,
 } from "@chakra-ui/react";
-import laMarDeRojo from "../public/9M6A3040.jpeg";
 import MusicPlayer from "./MusicPlayer";
 import { LocalMusicPlayer } from "./LocalMusicPlayer";
 import Link from "next/link";
+import { PhotoGrid } from "./Grid";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -85,17 +84,8 @@ export default function Home() {
           <Link href="gallery">cart</Link>
         </Box>
       </Flex>
-
-      <div style={{ width: "300px" }}>
-        <Image
-          src={laMarDeRojo}
-          alt="Una muchacha vestida de rojo"
-          placeholder="blur"
-          sizes="10vw"
-        />
-
-        <LocalMusicPlayer />
-      </div>
+      <PhotoGrid />
+      <LocalMusicPlayer />
     </Box>
   );
 }
