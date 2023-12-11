@@ -1,11 +1,11 @@
 import "../styles/globals.css";
-import { ChakraProvider } from "@chakra-ui/react";
+import { Chakra } from "./Chakra";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ChakraProvider>
+    <Chakra cookies={pageProps.cookies}>
       <Component {...pageProps} />
-    </ChakraProvider>
+    </Chakra>
   );
 }
 
