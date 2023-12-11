@@ -13,7 +13,18 @@ const listaDeImagenes = [
   laMarDeRojo,
   laMarDeRojo,
   laMarDeRojo,
+  laMarDeRojo,
+  laMarDeRojo,
+  laMarDeRojo,
+  laMarDeRojo,
+  laMarDeRojo,
+  laMarDeRojo,
+  laMarDeRojo,
 ];
+
+const SIZE = 194;
+
+const style = { width: SIZE + "px", height: SIZE + "px" };
 
 export function PhotoGrid() {
   return (
@@ -24,7 +35,7 @@ export function PhotoGrid() {
             src={imagen}
             alt="Una muchacha vestida de rojo"
             placeholder="blur"
-            style={{ width: "150px", height: "150px" }}
+            style={style}
           />
         </div>
       ))}

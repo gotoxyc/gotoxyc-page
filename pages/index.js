@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { Box, Flex, Heading } from "@chakra-ui/react";
+import { Container, Flex, Heading } from "@chakra-ui/react";
 
 import { LocalMusicPlayer } from "../components/LocalMusicPlayer";
 
@@ -9,7 +9,7 @@ import { MenuBar } from "../components/MenuBar";
 
 export default function Home() {
   return (
-    <Box px={8}>
+    <Container centerContent maxW="container.xl">
       <Head>
         <title>Gotoxyc</title>
         <meta
@@ -24,9 +24,9 @@ export default function Home() {
       </Flex>
 
       <MenuBar />
-
       <PhotoGrid />
+
       <LocalMusicPlayer />
-    </Box>
+    </Container>
   );
 }
