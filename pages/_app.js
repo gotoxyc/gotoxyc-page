@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import { Chakra } from "./Chakra";
+import Chakra from "../components/Chakra";
 
 function MyApp({ Component, pageProps }) {
   return (

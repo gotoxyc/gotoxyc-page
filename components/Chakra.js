@@ -31,3 +31,5 @@ export function getServerSideProps({ req }) {
     },
   };
 }
+
+export default Chakra;
