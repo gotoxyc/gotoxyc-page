@@ -24,7 +24,7 @@ export function PhotoGrid() {
             src={imagen}
             alt="Una muchacha vestida de rojo"
             placeholder="blur"
-            style={{ width: "250px", height: "250px" }}
+            style={{ width: "150px", height: "150px" }}
           />
         </div>
       ))}
